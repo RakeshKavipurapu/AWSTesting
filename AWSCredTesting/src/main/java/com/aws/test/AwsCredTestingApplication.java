@@ -16,7 +16,7 @@ public class AwsCredTestingApplication {
 	
 	  AWSTesting test=ctx.getBean(AWSTesting.class,"test"); 
 	  //creating a new bucket
-	  test.createBucket();
+	  //test.createBucket();
 	  try {
 		  //connecting to rds instance
 		test.getRemoteConnection();
