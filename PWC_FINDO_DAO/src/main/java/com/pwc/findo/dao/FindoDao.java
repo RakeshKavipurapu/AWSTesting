@@ -1,5 +1,7 @@
 package com.pwc.findo.dao;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +52,24 @@ public void updateDonorDetails(int id,String updatedname,String updatedPassword)
 	repo.save(updateDonor);
 }
 
+
+public void deleteDonorDetails(int id)
+{
+	repo.deleteById(id);
+	System.out.println("Donor with id::"+id+"has been deleted");
+}
+
+
+public ArrayList<Donor> getAllDonorDetails()
+{
+	ArrayList<Donor> donors=(ArrayList<Donor>) repo.findAll();
+	
+	donors.forEach(System.out::println);
+	
+	return donors;
+	
+	
+}
 
 
 

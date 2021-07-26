@@ -14,7 +14,9 @@ public class PwcFindoDaoApplication {
 		
 	//dao.saveDonorDetails();
 	//dao.getDonorDetailsbyId(1);
-	dao.updateDonorDetails(1, "Arul", "arunaaa@123");
+	//dao.updateDonorDetails(1, "Arul", "arunaaa@123");
+	//dao.deleteDonorDetails(1);
+	dao.getAllDonorDetails();
 	}
 
 }
