@@ -35,6 +35,7 @@ public class AppController {
 		
 		userRepo.save(user);
 		
+		SNSPublisher.publishMessage("LoginConfirmation", "Mr/Mrs:"+user.getFirstName()+" "+user.getLastName()+"has been successfully registered");
 		return "register_success";
 	}
 	
