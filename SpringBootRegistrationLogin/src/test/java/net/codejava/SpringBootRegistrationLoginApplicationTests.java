@@ -1,10 +1,10 @@
-package com.pwc.findo.dao;
+package net.codejava;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PwcFindoDaoApplicationTests {
+class SpringBootRegistrationLoginApplicationTests {
 
 	@Test
 	void contextLoads() {
